@@ -20,8 +20,7 @@ while True:
     sys.stdout.flush()
     if input()=='ХВАТИТ':
         break
-    sys.stdout.write('\033[F' * 1)
-    sys.stdout.write('\033[F' * 2)  # Возврат курсора на две строки назад
+    sys.stdout.write('\033[F' * 3)  # Возврат курсора на три строки назад
     sys.stdout.write(f" {len(comment)*' '}\n")  
     sys.stdout.write(f" {len(code)*' '}\n")
     sys.stdout.write('\033[F' * 2)
