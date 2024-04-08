@@ -19,7 +19,7 @@ def training():
         sys.stdout.write(f"{comment}\n")
         sys.stdout.write(f"{code}\n")
         # sys.stdout.flush() программа должна работать без этой команды - проверить
-        if input()=='ХВАТИТ':
+        if input()=='хватит':
             break
         sys.stdout.write('\033[F' * 3)  # Возврат курсора на три строки назад
         sys.stdout.write(f" {len(comment)*' '}\n")  
