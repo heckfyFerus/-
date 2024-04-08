@@ -40,7 +40,7 @@ def battle():
         i=input()
         sys.stdout.write('\033[F' * 2)  # Возврат курсора на две строки назад
         sys.stdout.write(f" {len(comment)*' '}\n")  
-        sys.stdout.write(f" {len(code)*' '}\n")
+        sys.stdout.write(f" {len(code)*' '*2}\n")
         sys.stdout.write('\033[F' * 2)
         if i=='хватит':
             break
@@ -53,7 +53,7 @@ def battle():
                 i=input()
                 sys.stdout.write('\033[F' * 2)  # Возврат курсора на две строки назад
                 sys.stdout.write(f" {len(comment)*' '}\n")  
-                sys.stdout.write(f" {len(code)*' '}\n")
+                sys.stdout.write(f" {len(code)*' '*2}\n")
                 sys.stdout.write('\033[F' * 2)
                 if i=='хватит':
                     break
@@ -74,7 +74,7 @@ def terminator():
         i=input()
         sys.stdout.write('\033[F' * 2)  # Возврат курсора на две строки назад
         sys.stdout.write(f" {len(comment)*' '}\n")  
-        sys.stdout.write(f" {len(code)*' '}\n")
+        sys.stdout.write(f" {len(code)*' '*2}\n")
         sys.stdout.write('\033[F' * 2)
         if i=='хватит':
             break
@@ -87,7 +87,7 @@ def terminator():
                 i=input()
                 sys.stdout.write('\033[F' * 2)  # Возврат курсора на две строки назад
                 sys.stdout.write(f" {len(comment)*' '}\n")  
-                sys.stdout.write(f" {len(code)*' '}\n")
+                sys.stdout.write(f" {len(code)*' '*2}\n")
                 sys.stdout.write('\033[F' * 2)
                 if i=='хватит':
                     break
