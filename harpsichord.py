@@ -1,7 +1,6 @@
 # импортируем необходимые библиотеки
 import random
 import sys
-import time
 
 # получить и подготовить данные
 with open('git.txt','r',encoding='utf-8') as file:
