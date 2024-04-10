@@ -17,7 +17,8 @@ def get_list_files():
 # возвращает вложенный спискок вида [[код][комментарий к коду]],[[код][комментарий к коду]], [[код][комментарий к коду]]и т.д. 
 def get_data_file():
     name_file=input('введите полное имя файла: ')
-    with open(rf'text_files\{name_file}','r',encoding='utf-8') as file: # получим данные
+    file_path=os.path.join('text_files',name_file)
+    with open(file_path,'r',encoding='utf-8') as file: # получим данные
         data=[[k.strip() for k in i.split('#')] for i in file.read().splitlines()] # преобразуем полученные данные в список вида [[код][комментарий к коду]]...
         return data
 
